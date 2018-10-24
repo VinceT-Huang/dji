@@ -1,0 +1,383 @@
+html, body, h1, h2, h3, h4, h5, h6, div, p, a, ul, ol, li, dl, dt, dd, input, form, fieldset, legend, img {
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+input:focus {
+  outline: none; }
+
+img {
+  display: block;
+  border: 0; }
+
+ul, ol, li {
+  list-style: none;
+  cursor: default; }
+
+a, u, h1, h2, h3, h4, h5, h6 {
+  text-decoration: none; }
+
+a {
+  display: block; }
+
+b, strong {
+  font-weight: normal; }
+
+em, i {
+  font-style: normal; }
+
+.clear {
+  display: block;
+  overflow: hidden; }
+
+.bigBox {
+  background-color: #eeeeee; }
+  .bigBox .article, .bigBox .footer {
+    width: 1200px;
+    margin: 0 auto; }
+  .bigBox .article {
+    height: 860px;
+    background-color: white;
+    margin-top: 100px;
+    position: relative; }
+    .bigBox .article > div {
+      float: left;
+      width: 50%;
+      height: 100%; }
+    .bigBox .article .article_banner {
+      background-color: gray;
+      position: relative; }
+      .bigBox .article .article_banner button {
+        position: absolute;
+        height: 96px;
+        width: 48px;
+        line-height: 96px;
+        text-align: center;
+        font-size: 24px;
+        top: 50%;
+        margin-top: -48px;
+        color: white;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        z-index: 99; }
+        .bigBox .article .article_banner button:hover {
+          background-color: rgba(0, 0, 0, 0.3); }
+      .bigBox .article .article_banner .banner_l {
+        left: 0;
+        border-radius: 0 3px 3px 0; }
+      .bigBox .article .article_banner .banner_r {
+        right: 0;
+        border-radius: 3px 0 0 3px; }
+      .bigBox .article .article_banner div {
+        height: 100%;
+        width: 100%; }
+        .bigBox .article .article_banner div a {
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0; }
+        .bigBox .article .article_banner div .banner_a1 {
+          background: url("../../images/login/login.jpg") no-repeat center center;
+          background-size: 100% 100%; }
+        .bigBox .article .article_banner div .banner_a2 {
+          background: url("../../images/login/login1.jpg") no-repeat center center;
+          background-size: 100% 100%; }
+        .bigBox .article .article_banner div .banner_a3 {
+          background: url("../../images/login/login2.jpg") no-repeat center center;
+          background-size: 100% 100%; }
+      .bigBox .article .article_banner ul {
+        position: absolute;
+        padding: 5px;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -20px;
+        overflow: hidden; }
+        .bigBox .article .article_banner ul li {
+          float: left;
+          height: 8px;
+          width: 8px;
+          background-color: #3b3e40;
+          border-radius: 50%;
+          margin-left: 5px; }
+        .bigBox .article .article_banner ul .banner_ul_li_active {
+          background-color: #f0f1f2; }
+    .bigBox .article .article_form_l {
+      display: block;
+      height: 860px; }
+      .bigBox .article .article_form_l .article_form_logo {
+        margin-top: 80px; }
+        .bigBox .article .article_form_l .article_form_logo a {
+          height: 30px;
+          width: 50px;
+          margin: 0 auto; }
+      .bigBox .article .article_form_l .article_form_title {
+        font-size: 32px;
+        color: #707374;
+        text-align: center;
+        margin-top: 40px;
+        height: 32px;
+        line-height: 32px; }
+      .bigBox .article .article_form_l .article_form_input_u {
+        margin-top: 55px;
+        text-align: center; }
+      .bigBox .article .article_form_l .article_form_input_p {
+        margin-top: 20px;
+        text-align: center; }
+      .bigBox .article .article_form_l input {
+        height: 48px;
+        width: 300px;
+        color: #979797;
+        font-size: 14px;
+        line-height: 46px;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+        text-indent: 10px; }
+      .bigBox .article .article_form_l .article_form_login {
+        text-align: center;
+        margin-top: 20px; }
+        .bigBox .article .article_form_l .article_form_login .btn-primary {
+          background-color: #44a8f2;
+          border: 1px solid #44a8f2;
+          height: 46px;
+          width: 298px; }
+      .bigBox .article .article_form_l .article_form_txt {
+        margin-top: 38px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center; }
+        .bigBox .article .article_form_l .article_form_txt .line {
+          display: inline-block;
+          width: 75px;
+          border-top: 1px solid #eee; }
+        .bigBox .article .article_form_l .article_form_txt .text {
+          font-size: 18px;
+          color: #707473;
+          vertical-align: middle; }
+      .bigBox .article .article_form_l .article_form_register {
+        text-align: center;
+        margin-top: 30px; }
+        .bigBox .article .article_form_l .article_form_register .btn-primary {
+          background-color: white;
+          border: 1px solid #44a8f2;
+          height: 46px;
+          width: 298px;
+          font-size: 16px;
+          color: #44a8f2; }
+    .bigBox .article .article_form_r {
+      display: none; }
+      .bigBox .article .article_form_r .article_form_logo {
+        margin-top: 80px; }
+        .bigBox .article .article_form_r .article_form_logo a {
+          height: 30px;
+          width: 50px;
+          margin: 0 auto; }
+      .bigBox .article .article_form_r .article_form_title {
+        font-size: 32px;
+        color: #707374;
+        text-align: center;
+        margin-top: 40px;
+        height: 32px;
+        line-height: 32px; }
+      .bigBox .article .article_form_r .article_form_r_choice {
+        text-align: center;
+        margin-top: 50px; }
+        .bigBox .article .article_form_r .article_form_r_choice button {
+          width: 150px;
+          border: 0;
+          border-bottom: 1px solid #eee;
+          background-color: white;
+          font-size: 16px;
+          color: black;
+          line-height: 40px;
+          outline: none; }
+        .bigBox .article .article_form_r .article_form_r_choice .active {
+          color: #44a8f2;
+          border-color: #44a8f2; }
+      .bigBox .article .article_form_r .article_form_r_forPhone {
+        display: block; }
+        .bigBox .article .article_form_r .article_form_r_forPhone .article_form_r_num {
+          margin-top: 20px;
+          text-align: center; }
+          .bigBox .article .article_form_r .article_form_r_forPhone .article_form_r_num button {
+            height: 46px;
+            border: 1px solid #eee;
+            border-right: 0;
+            width: 79px;
+            font-size: 14px;
+            background-color: #f7f8fa; }
+          .bigBox .article .article_form_r .article_form_r_forPhone .article_form_r_num input {
+            height: 46px;
+            width: 218px;
+            text-indent: 10px;
+            color: #999da0;
+            font-size: 14px;
+            border: 1px solid #eee; }
+          .bigBox .article .article_form_r .article_form_r_forPhone .article_form_r_num p {
+            text-align: left;
+            text-indent: 10px;
+            font-size: 12px;
+            line-height: 1.5;
+            color: #f04848;
+            padding: 0 150px; }
+        .bigBox .article .article_form_r .article_form_r_forPhone .article_form_r_slide {
+          height: 40px;
+          line-height: 40px;
+          width: 300px;
+          position: relative;
+          margin: 20px auto 0;
+          font-size: 12px;
+          text-align: center;
+          background-color: #e8e8e8; }
+          .bigBox .article .article_form_r .article_form_r_forPhone .article_form_r_slide div {
+            position: absolute;
+            border: 1px solid #cccccc;
+            left: 0;
+            height: 40px;
+            width: 40px;
+            background-color: white;
+            cursor: move; }
+        .bigBox .article .article_form_r .article_form_r_forPhone .article_form_r_code {
+          margin: 20px auto 0;
+          height: 46px;
+          width: 300px;
+          border: 1px solid #eee; }
+          .bigBox .article .article_form_r .article_form_r_forPhone .article_form_r_code input {
+            font-size: 14px;
+            height: 44px;
+            line-height: 44px;
+            width: 160px;
+            text-indent: 10px;
+            border: 0; }
+          .bigBox .article .article_form_r .article_form_r_forPhone .article_form_r_code .btn-primary {
+            height: 38px;
+            width: 130px;
+            height: 34px;
+            border-color: #44a8f2;
+            color: white;
+            background-color: #44a8f2; }
+          .bigBox .article .article_form_r .article_form_r_forPhone .article_form_r_code p {
+            text-align: left;
+            text-indent: 10px;
+            font-size: 12px;
+            line-height: 1.5;
+            color: #f04848; }
+        .bigBox .article .article_form_r .article_form_r_forPhone .article_form_r_next {
+          text-align: center;
+          margin-top: 20px; }
+          .bigBox .article .article_form_r .article_form_r_forPhone .article_form_r_next button {
+            border-color: #44a8f2;
+            color: white;
+            background-color: #44a8f2;
+            height: 50px;
+            width: 300px;
+            font-size: 16px; }
+        .bigBox .article .article_form_r .article_form_r_forPhone .article_form_r_login {
+          text-align: center;
+          margin-top: 15px;
+          line-height: 20px; }
+          .bigBox .article .article_form_r .article_form_r_forPhone .article_form_r_login .txt-primary {
+            color: #44a8f2; }
+      .bigBox .article .article_form_r .article_form_r_forMail {
+        display: none; }
+        .bigBox .article .article_form_r .article_form_r_forMail > div {
+          margin-top: 20px;
+          text-align: center; }
+          .bigBox .article .article_form_r .article_form_r_forMail > div > input {
+            height: 48px;
+            width: 300px;
+            border: 1px solid #eee;
+            text-indent: 10px;
+            font-size: 14px; }
+        .bigBox .article .article_form_r .article_form_r_forMail .article_form_r_forMail_mail p {
+          text-align: left;
+          text-indent: 10px;
+          font-size: 12px;
+          line-height: 1.5;
+          color: #f04848;
+          padding: 0 150px; }
+        .bigBox .article .article_form_r .article_form_r_forMail .article_form_r_forMail_slide {
+          height: 40px;
+          line-height: 40px;
+          width: 300px;
+          position: relative;
+          margin: 20px auto 0;
+          font-size: 12px;
+          text-align: center;
+          background-color: #e8e8e8; }
+          .bigBox .article .article_form_r .article_form_r_forMail .article_form_r_forMail_slide div {
+            position: absolute;
+            border: 1px solid #cccccc;
+            left: 0;
+            height: 40px;
+            width: 40px;
+            background-color: white;
+            cursor: move; }
+        .bigBox .article .article_form_r .article_form_r_forMail .article_form_r_forMail_txt {
+          font-size: 12px;
+          color: #6f6f67;
+          height: 24px;
+          line-height: 24px;
+          text-align: left; }
+          .bigBox .article .article_form_r .article_form_r_forMail .article_form_r_forMail_txt input[type="checkbox"] {
+            margin-top: 0;
+            margin-right: 5px;
+            margin-left: 150px;
+            height: 24px;
+            width: 24px;
+            vertical-align: middle;
+            border: 1px solid #cdcdcd;
+            background-color: white;
+            ontline: none; }
+        .bigBox .article .article_form_r .article_form_r_forMail .article_form_r_forMail_protocol {
+          font-size: 12px;
+          color: #6f6f67;
+          height: 24px;
+          line-height: 24px;
+          text-align: left;
+          margin-top: 12px; }
+          .bigBox .article .article_form_r .article_form_r_forMail .article_form_r_forMail_protocol input[type="checkbox"] {
+            margin-top: 0;
+            margin-right: 5px;
+            margin-left: 150px;
+            height: 24px;
+            width: 24px;
+            vertical-align: middle;
+            border: 1px solid #44a8f2;
+            background-color: #44a8f2;
+            ontline: none; }
+          .bigBox .article .article_form_r .article_form_r_forMail .article_form_r_forMail_protocol a {
+            display: inline;
+            margin: 0 4px;
+            color: #33373a; }
+        .bigBox .article .article_form_r .article_form_r_forMail .article_form_r_forMail_submit {
+          text-align: center;
+          margin-top: 20px; }
+          .bigBox .article .article_form_r .article_form_r_forMail .article_form_r_forMail_submit button {
+            border-color: #44a8f2;
+            color: white;
+            background-color: #44a8f2;
+            height: 50px;
+            width: 300px;
+            font-size: 16px; }
+        .bigBox .article .article_form_r .article_form_r_forMail .article_form_r_forMail_login {
+          text-align: center;
+          margin-top: 15px;
+          line-height: 20px; }
+          .bigBox .article .article_form_r .article_form_r_forMail .article_form_r_forMail_login .txt-primary {
+            color: #44a8f2; }
+  .bigBox .footer {
+    height: 93px; }
+    .bigBox .footer p {
+      font-size: 12px;
+      text-align: center;
+      line-height: 22px;
+      color: #979797; }
+      .bigBox .footer p:first-child {
+        margin-top: 10px; }
+      .bigBox .footer p a {
+        display: inline;
+        color: #979797;
+        text-decoration: underline; }

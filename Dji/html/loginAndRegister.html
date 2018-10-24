@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/iconfont.css">
+        <link rel="stylesheet" href="../css/mini/loginAndRegister.min.css">
+        <script type="text/javascript" src="../js/require.js" async="true" defer data-main="../js/loginAndRegister"></script>
+        <script>
+            window.onload = function(){
+                require(["loginAndRegister"], function(loginAndRegister){
+                    loginAndRegister.main();
+                })
+            }
+        </script>
+        <title>DJI登录注册页面</title>
+    </head>
+    <body>
+        <div class="bigBox clear">
+            <div class="article">
+                <div class="article_banner iconfont">
+                    <button class="banner_l">&#xe601;</button>
+                    <button class="banner_r">&#xe600;</button>
+                    <div>
+                        <a class="banner_a1" href="#"></a>
+                        <a class="banner_a2" href="#"></a>
+                        <a class="banner_a3" href="#"></a>
+                    </div>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <!-- 登录的页面 -->
+                <div class="article_form_l">
+                    <div class="panel">
+                        <div class="article_form_logo">
+                            <a href="#"><img src="../images/login/login_logo_03.jpg" alt=""></a>
+                        </div>
+                        <div class="article_form_title
+                        ">
+                            登录
+                        </div>
+                        <div class="article_form_input_u">
+                            <input type="text" name="username" placeholder="邮箱/手机*">
+                        </div>
+                        <div class="article_form_input_p">
+                            <input type="text" name="password" placeholder="密码*">
+                            <p></p>
+                        </div>
+                        <div class="article_form_login">
+                            <button type="submit" name="login" class="btn btn-primary">登录</button>
+                        </div>
+                        <div class="article_form_txt">
+                            <span class="line"></span>
+                            <span class="text">尚未注册账号?</span>
+                            <span class="line"></span>
+                        </div>
+                        <div class="article_form_register">
+                            <button type="button" name="button" class="btn btn-primary">注册DJI账号</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 注册的页面 -->
+                <div class="article_form_r">
+                    <div class="panel">
+                        <div class="article_form_logo">
+                            <a href="#"><img src="../images/login/login_logo_03.jpg" alt=""></a>
+                        </div>
+                        <div class="article_form_title
+                        ">
+                            注册
+                        </div>
+                        <div class="article_form_r_choice">
+                            <button id="article_form_r_choice_phone" class="active">
+                                手机注册
+                            </button><button id="article_form_r_choice_email" class="">
+                                邮箱注册
+                            </button>
+                        </div>
+
+                        <!-- 手机注册 -->
+                        <div class="article_form_r_forPhone">
+                            <div class="article_form_r_num">
+                                <button type="button" name="button">+86</button><input type="text" name="phoneNum" value="" placeholder="请输入手机号*">
+                                <p></p>
+                            </div>
+
+                            <div class="article_form_r_slide">
+                                <div class="slide">
+                                    >>
+                                </div>
+                                请按住滑块，拖动到最右边
+                            </div>
+
+                            <div class="article_form_r_code">
+                                <input id="input_code" type="text" name="" value="" placeholder="短信验证码*"><button id="send_code" class="btn btn-primary" type="button" name="button">发送验证码</button>
+                                <p></p>
+                            </div>
+
+                            <div class="article_form_r_next">
+                                <button class="btn btn-primary" type="button" name="button">下一步</button>
+                            </div>
+
+                            <div class="article_form_r_login">
+                                <a class="txt txt-primary" href="#">立即登录</a>
+                            </div>
+                        </div>
+
+                        <!-- 邮箱注册 -->
+                        <div class="article_form_r_forMail">
+                            <div class="article_form_r_forMail_mail">
+                                <input type="email" name="username" value="" placeholder="邮箱*">
+                                <p></p>
+                            </div>
+                            <div class="article_form_r_forMail_mail">
+                                <input type="text" name="password" value="" placeholder="密码*">
+                                <p></p>
+                            </div>
+                            <div class="article_form_r_forMail_mail">
+                                <input type="text" name="repassword" value="" placeholder="再次输入密码*">
+                                <p></p>
+                            </div>
+                            <div class="article_form_r_forMail_slide">
+                                <div class="slide">
+                                    >>
+                                </div>
+                                请按住滑块，拖动到最右边
+                            </div>
+                            <div class="article_form_r_forMail_txt">
+                                <input type="checkbox" name="msg" value="">
+                                <span>获取大疆最新产品、服务、软件升级等信息。</span>
+                            </div>
+                            <div class="article_form_r_forMail_protocol">
+                                <input type="checkbox" name="msg" value="">
+                                <span>同意并愿意遵守大疆创新</span><a href="#" class="txt txt-default">隐私政策</a><span>和</span><a href="#" class="txt txt-default">使用条款</a>
+                            </div>
+                            <div class="article_form_r_forMail_submit">
+                                <button class="btn btn-primary" type="button" name="button">提交</button>
+                            </div>
+                            <div class="article_form_r_forMail_login">
+                                <a class="txt txt-primary" href="#">立即登录</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer container">
+                <p>Copyright&copy;2018 DJI All Rights Reserved. <a href="#">隐私政策</a> <a href="#">使用条款</a> <a href="#">网站地图</a></p>
+                <p>如果您有任何关于DJI账户的问题，请<a href="#">点击此处</a>;</p>
+                <p>粤ICP备12022215号-11</p>
+            </div>
+        </div>
+    </body>
+</html>
